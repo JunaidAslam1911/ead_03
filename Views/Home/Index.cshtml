@@ -1,0 +1,31 @@
+﻿@model List<System.String>
+@{
+    ViewBag.Title = "index";
+}
+
+<h2> Please Select Your Desired Area.........</h2>
+<select style="font-size:large" name="Area" id="AreaSelector">
+    <option style="font-size:large">-----Select your desired Area-------</option>
+    @{
+        foreach (var a in Model)
+        {
+            <option style="font-size:large" value="@a">
+                @a
+            </option>
+
+        }
+    }
+</select>
+<br />
+<br />
+
+
+
+<div id="MosqueTable"></div>
+<script>
+    $('#AreaSelector').change(function () {
+        // debugger;
+        var value = $('#AreaSelector').val();
+        $('#MosqueTable').load('/Home/ShowData?cat=' + value);
+    });
+</script>

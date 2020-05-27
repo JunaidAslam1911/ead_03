@@ -1,0 +1,246 @@
+﻿@{
+    ViewBag.Title = "Add Masjid";
+}
+<h2>@ViewBag.Title</h2>
+
+<form id="Update" method="get" action="/Home/Add">
+    Name: <input type="text" placeholder="Enter Name" name="name" />
+    Address: <input type="text" placeholder="Enter Address" name="address" />
+    Area: <input type="text" placeholder="Enter area" name="area" />
+    <br />
+    <br />
+    Select Fajar Time: Hour
+    <select name="fajar">
+
+        @{ for (int i = 0; i <= 12; i++)
+            {
+                if (i >= 0 && i <= 9)
+                {
+                    var n="0" + @i;
+                    <option value="@n">@n</option>
+                }
+                else
+                {
+                    <option value="@i">@i</option>
+                }
+            }
+          }
+
+
+    </select>
+    Minute
+    <select name="fajar1">
+        @{ for (int i = 0; i <= 60; i++)
+            {
+                if (i >= 0 && i <= 9)
+                {
+                    var n = "0" + @i;
+                    <option value="@n">@n</option>
+                }
+                else
+                {
+                    <option value="@i">@i</option>
+                }
+            }
+        }
+    </select>
+    AM or PM
+    <select name="fajar2">
+
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+
+    </select>
+    <br />
+    <br />
+
+    Select Zohar Time: Hour
+    <select name="zohar">
+        @{ for (int i = 0; i <= 12; i++)
+            {
+                if (i >= 0 && i <= 9)
+                {
+                    var n = "0" + @i;
+                    <option value="@n">@n</option>
+                }
+                else
+                {
+                    <option value="@i">@i</option>
+                }
+            }
+        }
+
+
+    </select>
+    Minute
+    <select name="zohar1">
+        @{ for (int i = 0; i <= 60; i++)
+            {
+                if (i >= 0 && i <= 9)
+                {
+                    var n = "0" + @i;
+                    <option value="@n">@n</option>
+                }
+                else
+                {
+                    <option value="@i">@i</option>
+                }
+            }
+        }
+    </select>
+    AM or PM
+    <select name="zohar2">
+
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+
+    </select>
+    <br />
+    <br />
+
+
+
+    Select Asar Time: Hour
+    <select name="asar">
+        @{ for (int i = 0; i <= 12; i++)
+            {
+                if (i >= 0 && i <= 9)
+                {
+                    var n = "0" + @i;
+                    <option value="@n">@n</option>
+                }
+                else
+                {
+                    <option value="@i">@i</option>
+                }
+            }
+        }
+
+
+    </select>
+    Minute
+    <select name="asar1">
+        @{ for (int i = 0; i <= 60; i++)
+            {
+                if (i >= 0 && i <= 9)
+                {
+                    var n = "0" + @i;
+                    <option value="@n">@n</option>
+                }
+                else
+                {
+                    <option value="@i">@i</option>
+                }
+            }
+        }
+    </select>
+    AM or PM
+<select name="asar2">
+
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
+
+</select>
+<br />
+<br />
+
+    Select Magrib Time: Hour
+<select name="magrib">
+    @{ for (int i = 0; i <= 12; i++)
+        {
+            if (i >= 0 && i <= 9)
+            {
+                var n = "0" + @i;
+                <option value="@n">@n</option>
+            }
+            else
+            {
+                <option value="@i">@i</option>
+            }
+        }
+    }
+
+
+</select>
+    Minute
+<select name="magrib1">
+    @{ for (int i = 0; i <= 60; i++)
+        {
+            if (i >= 0 && i <= 9)
+            {
+                var n = "0" + @i;
+                <option value="@n">@n</option>
+            }
+            else
+            {
+                <option value="@i">@i</option>
+            }
+        }
+    }
+</select>
+    AM or PM
+<select name="magrib2">
+
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
+
+</select>
+<br />
+<br />
+
+   Select Esha Time: Hour
+<select name="esha">
+    @{ for (int i = 0; i <= 12; i++)
+        {
+            if (i >= 0 && i <= 9)
+            {
+                var n = "0" + @i;
+                <option value="@n">@n</option>
+            }
+            else
+            {
+                <option value="@i">@i</option>
+            }
+        }
+    }
+
+
+</select>
+    Minute
+<select name="esha1">
+    @{ for (int i = 0; i <= 60; i++)
+        {
+            if (i >= 0 && i <= 9)
+            {
+                var n = "0" + @i;
+                <option value="@n">@n</option>
+            }
+            else
+            {
+                <option value="@i">@i</option>
+            }
+        }
+    }
+</select>
+    AM or PM
+<select name="esha2">
+
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
+
+</select>
+<br />
+<br />
+
+<input type="submit" value="Add Mosque" />
+
+
+<br />
+<br />
+    </form>
+
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:bsef17a511@pucit.edu.pk">bsef17a511@pucit.edu.pk</a><br />
+
+</address>
