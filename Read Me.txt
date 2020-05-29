@@ -1,0 +1,12 @@
+Prayer Timing Schedule For Masjid has been developed to make you upto date about prayer timings according to your specific area so that you may not get late in your prayer.
+
+This project was developed in ASP.NET MVC Visual Studio 2019, so in order to use this project you must have Visual Studio 2019 or later.
+
+System Specifications Or Recommended Requirements:
+Core i5 7th generation
+4GB Ram
+500 HDD
+Nvidia GTX 570 or Later
+
+Developer: Muhammad Junaid Aslam 
+Course Instructor: Sir Waqas Riaz
